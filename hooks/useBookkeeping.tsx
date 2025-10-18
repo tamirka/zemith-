@@ -4,7 +4,7 @@ import { Transaction, Invoice, Bill, BookkeepingContextType, TransactionStatus, 
 const BookkeepingContext = createContext<BookkeepingContextType | undefined>(undefined);
 
 const initialTransactions: Transaction[] = [
-    { id: '1', date: '2023-10-26', description: 'Web hosting services', amount: 75.00, type: 'Expense', category: 'Software', status: TransactionStatus.Completed, receiptUrl: 'https://picsum.photos/seed/receipt1/100' },
+    { id: '1', date: '2023-10-26', description: 'Web hosting services', amount: 75.00, type: 'Expense', category: 'Software', status: TransactionStatus.Completed },
     { id: '2', date: '2023-10-25', description: 'Client payment - Project Alpha', amount: 2500.00, type: 'Income', category: 'Sales', status: TransactionStatus.Completed },
     { id: '3', date: '2023-10-24', description: 'Office coffee and snacks', amount: 45.50, type: 'Expense', category: 'Office Supplies', status: TransactionStatus.Completed },
     { id: '4', date: '2023-10-22', description: 'Flight to conference', amount: 450.80, type: 'Expense', category: 'Travel', status: TransactionStatus.Pending },

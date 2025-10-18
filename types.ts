@@ -34,7 +34,6 @@ export interface Transaction {
   type: 'Income' | 'Expense';
   category: TransactionCategory;
   status: TransactionStatus;
-  receiptUrl?: string;
 }
 
 export interface InvoiceItem {
